@@ -6,4 +6,4 @@ I am using github, Azure and Azure DevOps.
 
 ## Requirements
 - dotnet core 2.1.5
-- SQL Server Express
+- SQL Server Express - https://go.microsoft.com/fwlink/?LinkID=799012 
