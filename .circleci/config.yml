@@ -2,19 +2,16 @@ version: 2
 jobs:
   build:
     docker:
-      - image: debian:stretch
+      - image: mcr.microsoft.com/dotnet/core/sdk:2.2
 
     steps:
       - checkout
 
       - run:
-          name: Greeting
-          command: echo Hello, world.
+          name: Restore Packages
+          command: dotnet restore
 
       - run:
-          name: Print the Current Time
-          command: date
-      
-      - run:
-          name: Build Step
+          name: Build App
           command: dotnet build
+      
